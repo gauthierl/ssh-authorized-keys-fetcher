@@ -1,0 +1,4 @@
+{
+    "cache_path": "/var/lib/db/ssh_authorized_keys.json",
+    "cache_ttl": "24h"
+}
