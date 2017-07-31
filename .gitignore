@@ -5,9 +5,6 @@
 *.dylib
 ssh_authorized_keys_fetcher
 
-# Config
-ssh_authorized_keys_fetcher.json
-
 # Cache
 cache.json
 
