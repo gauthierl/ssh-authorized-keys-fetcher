@@ -1,9 +1,0 @@
-#!/usr/bin/make -f
-
-export DH_OPTIONS
-
-export DH_GOPKG := lapp-gitlab.in2p3.fr/gauthierl/ssh_authorized_keys_fetcher
-
-%:
-	dh $@ --buildsystem=golang --with=golang
-
