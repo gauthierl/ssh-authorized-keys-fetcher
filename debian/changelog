@@ -1,0 +1,5 @@
+ssh-authorized-keys-fetcher (0.0~git20170731.0.6829b57-1) UNRELEASED; urgency=medium
+
+  * Initial release
+
+ -- gauthierl <gauthierl@lapth.cnrs.fr>  Mon, 31 Jul 2017 12:52:12 +0200

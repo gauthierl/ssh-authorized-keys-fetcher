@@ -1,0 +1,21 @@
+Source: ssh-authorized-keys-fetcher
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: TODO <gauthierl@lappc-f312.lapp.in2p3.fr>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any
+Standards-Version: 3.9.8
+Homepage: https://github.com/gauthierl/ssh_authorized_keys_fetcher
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/ssh-authorized-keys-fetcher.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/ssh-authorized-keys-fetcher.git
+XS-Go-Import-Path: github.com/gauthierl/ssh_authorized_keys_fetcher
+
+Package: ssh-authorized-keys-fetcher
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Fetch and cache SSH pubkey
+ 

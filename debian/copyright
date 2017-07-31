@@ -1,0 +1,12 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: ssh_authorized_keys_fetcher
+Source: https://github.com/gauthierl/ssh_authorized_keys_fetcher
+
+Files: *
+Copyright: 2017 
+License: MIT
+
+Files: debian/*
+Copyright: 2017 gauthierl <gauthierl@lapth.cnrs.fr>
+License: MIT
+Comment: Debian packaging is licensed under the same terms as upstream
