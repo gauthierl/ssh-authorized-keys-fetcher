@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: ssh_authorized_keys_fetcher
-Source: https://github.com/gauthierl/ssh_authorized_keys_fetcher
+Source: https://github.com/gauthierl/ssh-authorized-keys-fetcher
 
 Files: *
 Copyright: 2017 
