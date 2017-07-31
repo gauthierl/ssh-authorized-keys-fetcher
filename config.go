@@ -9,7 +9,7 @@ import (
 type Config struct {
 	CachePath string   `json:"cache_path"`
 	CacheTTL  Duration `json:"cache_ttl"`
-	GitlabURL string   `json:"gitlab_url"`
+	FetchURL  string   `json:"fetch_url"`
 }
 
 // NewConfig constructor

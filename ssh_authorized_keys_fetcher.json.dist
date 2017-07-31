@@ -1,0 +1,5 @@
+{
+    "cache_path": "cache.json",
+    "cache_ttl": "24h",
+    "fetch_url": "https://lapp-gitlab.in2p3.fr/{{ .UserName }}.keys"
+}

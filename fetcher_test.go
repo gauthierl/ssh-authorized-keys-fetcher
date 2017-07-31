@@ -7,7 +7,7 @@ import (
 	"testing"
 )
 
-func TestGitlabFetchPubkeys(t *testing.T) {
+func TestFetchPubkeys(t *testing.T) {
 	var pubkeys []string
 	var err error
 
@@ -23,7 +23,7 @@ func TestGitlabFetchPubkeys(t *testing.T) {
 	}))
 	defer notFoundPubKeys.Close()
 
-	pubkeys, err = GitlabFetchPubKeys(validPubKeys.URL+"/{{ .UserName }}", "user1")
+	pubkeys, err = FetchPubKeys(validPubKeys.URL+"/{{ .UserName }}", "user1")
 	if err != nil {
 		t.Errorf("Should not return an error (%s).", err.Error())
 	}
@@ -31,7 +31,7 @@ func TestGitlabFetchPubkeys(t *testing.T) {
 		t.Error("Should have two pubkeys.")
 	}
 
-	pubkeys, err = GitlabFetchPubKeys(notFoundPubKeys.URL+"/{{ .UserName }}", "user1")
+	pubkeys, err = FetchPubKeys(notFoundPubKeys.URL+"/{{ .UserName }}", "user1")
 	if err == nil {
 		t.Error("Should return an error.")
 	}

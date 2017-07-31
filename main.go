@@ -42,7 +42,7 @@ func main() {
 		return
 	}
 
-	pubKeys, err := GitlabFetchPubKeys(config.GitlabURL, userName)
+	pubKeys, err := FetchPubKeys(config.FetchURL, userName)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error: %s\n", err.Error())
 		return

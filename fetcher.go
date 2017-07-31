@@ -8,8 +8,8 @@ import (
 	"text/template"
 )
 
-// GitlabFetchPubKeys from a Gitlab server
-func GitlabFetchPubKeys(URLTemplate string, userName string) (pubKeys []string, err error) {
+// FetchPubKeys from a HTTP server
+func FetchPubKeys(URLTemplate string, userName string) (pubKeys []string, err error) {
 	var URLBuffer bytes.Buffer
 
 	templateEngine, err := template.New("URL").Parse(URLTemplate)
@@ -32,7 +32,7 @@ func GitlabFetchPubKeys(URLTemplate string, userName string) (pubKeys []string, 
 	}
 
 	if response.StatusCode != 200 {
-		err = fmt.Errorf("Gitlab return an error (%s)", URL)
+		err = fmt.Errorf("HTTP server return an error (%s)", URL)
 		return
 	}
 
