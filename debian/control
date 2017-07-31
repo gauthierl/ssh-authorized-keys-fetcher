@@ -1,8 +1,8 @@
 Source: ssh-authorized-keys-fetcher
-Section: devel
-Priority: extra
+Section: admin
+Priority: optional
 Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
-Uploaders: TODO <gauthierl@lappc-f312.lapp.in2p3.fr>
+Uploaders: gauthierl <gauthierl@lapth.cnrs.fr>
 Build-Depends: debhelper (>= 10),
                dh-golang,
                golang-any
@@ -18,4 +18,6 @@ Built-Using: ${misc:Built-Using}
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Description: Fetch and cache SSH pubkey
- 
+ This program fetch user's SSH pubkeys and cache the result to be reused later.
+ It's used by ssh daemon to retrieve the user's pubkeys. 
+ You have to configure AuthorizedKeysCommand in your sshd_config to use it.
